@@ -1,0 +1,27 @@
+\documentclass[
+  aspectratio=169,
+]{beamer}
+
+\usepackage[english,main=czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{microtype}
+\usetheme[
+  workplace=fi,
+]{MU}
+
+% Bibliography
+\usepackage[
+  backend=biber,
+  style=iso-authoryear,
+  sortlocale=cs_CZ,
+  autolang=other,
+  bibencoding=UTF8,
+]{biblatex}
+\addbibresource{content.bib}
+
+\begin{document}
+\input content
+\end{document}

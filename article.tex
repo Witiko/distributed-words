@@ -1,0 +1,34 @@
+\documentclass{article}
+
+\usepackage[english,main=czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage{tgpagella}
+\usepackage{beamerarticle}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{microtype}
+\usetheme[
+  workplace=fi,
+]{MU}
+
+% Bibliography
+\usepackage[
+  backend=biber,
+  style=iso-authoryear,
+  sortlocale=cs_CZ,
+  autolang=other,
+  bibencoding=UTF8,
+]{biblatex}
+\addbibresource{content.bib}
+
+% Rejstřík
+\usepackage{imakeidx}
+\indexsetup{noclearpage}
+\makeindex
+
+\begin{document}
+\input content
+\end{document}
